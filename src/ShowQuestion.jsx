@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
-
+import './ShowQuestion.css'
 
 function ShowQuestion(){
 
@@ -42,10 +42,10 @@ function ShowQuestion(){
     return (
         <div>
                 
-                <div className='main'>
+                <div className='main question-detail'>
                     <div className='content'>
-                         <h1>Show Question Page</h1>
-                         <h1>{questionTitle}</h1>
+                         {/* <h1>Show Question Page</h1> */}
+                         <p>{questionTitle}</p>
                          <img src={`http://localhost/subscriber-company/project-one/storage/app/public/${questionImage}`} className='img-design' alt='there is no photo'/>
                          {/* <img src={'http://127.0.0.1:8000/storage/'+questionImage} className='img-design' alt='there is no photo'/> */}
                             

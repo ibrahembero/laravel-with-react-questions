@@ -1,0 +1,28 @@
+.question-detail {
+    padding-top: 30px;
+    background-image: url('../public/template.webp');
+    background-size: cover;
+    background-position: center;
+    width: 424px;
+    height: 380px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .question-detail h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .question-detail p {
+    font-size: 16px;
+  }
+.img-design{
+    width: 100%; /* Adjust width as needed */
+    max-height: 125px; /* Adjust height as needed */
+    object-fit: cover; /* To scale the image within its dimensions */
+}
