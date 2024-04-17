@@ -27,6 +27,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/questions', [QuestionController::class, 'showAllQuestions'])->name('questions.index');
     Route::get('/createquestion', [QuestionController::class, 'createQuestion'])->name('questions.create');
     Route::post('/storequestions', [QuestionController::class, 'storeQuestion'])->name('questions.store');
     

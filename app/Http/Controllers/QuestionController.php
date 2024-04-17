@@ -28,6 +28,14 @@ class QuestionController extends Controller
         //return view('question', compact('question'));
         //return "hello from question controller".$id;
     }
+    /**
+     *  show all questions
+     */
+    public function showAllQuestions(Request $request)
+    {
+        $questions = Question::all();
+        return view('questions.index', compact('questions'));
+    }
      /**
      *  form create question
      */
